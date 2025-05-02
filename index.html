@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Литературное приложение</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Заголовок -->
+    <div class="header">
+      <h1>LiteratureGuide</h1>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Введите имя писателя..." />
+        <ul id="autocomplete-list"></ul>
+      </div>
+      <div class="controls">
+        <select id="lang-switch">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+        <button id="save-author">Добавить в избранное</button>
+      </div>
+    </div>
+
+    <!-- Биография -->
+    <div class="card">
+      <h2 id="author-name">Имя писателя</h2>
+      <div class="bio-content">
+        <img id="author-image" src="" alt="Фото автора" />
+        <p id="author-bio">Здесь будет отображаться биография писателя.</p>
+      </div>
+    </div>
+
+    <!-- Произведения -->
+    <div class="card">
+      <h2>Произведения</h2>
+      <div id="works" class="slider">
+        <p>Здесь появятся произведения писателя.</p>
+      </div>
+    </div>
+
+    <!-- Анализ стихотворения -->
+    <div class="card">
+      <h2>Анализ стихотворения</h2>
+      <textarea id="poem-input" placeholder="Вставьте стихотворение для анализа..."></textarea>
+      <button id="analyze-btn">Анализировать</button>
+      <div id="poem-analysis"></div>
+    </div>
+
+    <!-- Избранное -->
+    <div class="card">
+      <h2>Избранные авторы</h2>
+      <div id="favorites"></div>
+    </div>
+
+    <div class="footer">© 2025 LiteratureGuide</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
